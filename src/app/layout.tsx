@@ -6,21 +6,21 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "pocketwatcher | The NFT explorer for SEI",
-  description: "Explore SEI wallet NFT holdings with pocketwatcher. Built by SEI Dragons.",
+    title: "pocketwatcher | The NFT explorer for SEI",
+    description: "Explore SEI wallet NFT holdings with pocketwatcher. Built by SEI Dragons.",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          inter.variable
+    return (
+        <html lang="en">
+        <body className={cn(
+            "min-h-screen bg-background font-sans antialiased",
+            inter.variable
         )}>{children}</body>
-    </html>
-  );
+        </html>
+    );
 }

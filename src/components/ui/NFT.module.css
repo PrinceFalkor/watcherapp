@@ -1,0 +1,20 @@
+.tradeOutcome {
+    font-weight: bold;
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    white-space: nowrap; /* Keep the text on a single line */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+    font-size: clamp(0.65rem, 1vw, 0.75rem); /* Adjust font size based on the viewport width */
+}
+
+.chad {
+    color: green;
+}
+
+.chump {
+    color: red;
+}
+
+.even {
+    color: grey;
+}
